@@ -17,7 +17,7 @@ local Settings = {
  
 local SelectedPart = "UpperTorso"                              
 local Prediction = true
-local PredictionValue = 0.15159910                            
+local PredictionValue = 0.151359910                            
  
  
     local AnchorCount = 0
@@ -38,7 +38,7 @@ local PredictionValue = 0.15159910
         e.AlwaysOnTop = Settings.rewrittenmain.DOT
         local a = Instance.new("Frame", e)
         if Settings.rewrittenmain.DOT == true then
-        a.Size = UDim2.new(2, 2, 2)
+        a.Size = UDim2.new(5, 5, 5)
         else
         a.Size = UDim2.new(0, 0, 0, 0)
         end
@@ -64,7 +64,7 @@ local PredictionValue = 0.15159910
     function noob(player)
         local character
         repeat wait() until player.Character
-        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(68, 214, 44), 0.3, 3)
+        local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(68, 114, 74), 0.3, 3)
         handler.Name = player.Name
         player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild(SelectedPart) end)
  
@@ -165,25 +165,25 @@ local PredictionValue = 0.15159910
              split = string.split(pingvalue,'(')
              ping = tonumber(split[1])
             if ping < 130 then
-                PredictionValue = 0.151
+                PredictionValue = 0.176
             elseif ping < 125 then
-                PredictionValue = 0.149
+                PredictionValue = 0.156
             elseif ping < 110 then
-                PredictionValue = 0.146
+                PredictionValue = 0.1467
             elseif ping < 105 then
-                PredictionValue = 0.138
+                PredictionValue = 0.192
             elseif ping < 90 then
-                PredictionValue = 0.136
+                PredictionValue = 0.156
             elseif ping < 80 then
-                PredictionValue = 0.134
+                PredictionValue = 0.174
             elseif ping < 70 then
-                PredictionValue = 0.129
+                PredictionValue = 0.144
             elseif ping < 60 then
-                PredictionValue = 0.122
+                PredictionValue = 0.180
             elseif ping < 50 then
-                PredictionValue = 0.111
+                PredictionValue = 0.190
             elseif ping < 40 then
-                PredictionValue = 0.109
+                PredictionValue = 0.113
             end
         end
     end)
@@ -435,31 +435,31 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.210	
+getgenv().Prediction = 0.254	
 elseif ping < 215 then	
-getgenv().Prediction = 0.198
+getgenv().Prediction = 0.219
 	elseif ping < 205 then
 getgenv().Prediction = 0.182	
 	elseif ping < 190 then
-getgenv().Prediction = 0.100	
+getgenv().Prediction = 0.178	
 elseif ping < 180 then	
-getgenv().Prediction = 0.131	
+getgenv().Prediction = 0.201	
 	elseif ping < 170 then
-getgenv().Prediction = 0.145	
+getgenv().Prediction = 0.175	
 	elseif ping < 160 then
 getgenv().Prediction = 0.176	
 	elseif ping < 150 then
-getgenv().Prediction = 0.134	
+getgenv().Prediction = 0.156	
 elseif ping < 140 then	
-getgenv().Prediction = 0.198	
+getgenv().Prediction = 0.208	
 elseif ping < 130 then	
-getgenv().Prediction = 0.220	
+getgenv().Prediction = 0.187	
 elseif ping < 120 then	
-getgenv().Prediction = 0.198	
+getgenv().Prediction = 0.178	
 elseif ping < 110 then	
-getgenv().Prediction = 0.145	
+getgenv().Prediction = 0.165	
 elseif ping < 105 then	
-getgenv().Prediction = 0.144
+getgenv().Prediction = 0.156
 elseif ping < 90 then	
 getgenv().Prediction = 0.134	
 elseif ping < 80 then	
@@ -475,7 +475,7 @@ getgenv().Prediction = 0.152
 elseif ping < 30 then	
 getgenv().Prediction = 0.158
 elseif ping < 20 then	
-getgenv().Prediction = 0.161
+getgenv().Prediction = 0.165
         end	
         end	
 	end 
