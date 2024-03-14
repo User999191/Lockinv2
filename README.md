@@ -435,33 +435,33 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.197	
+getgenv().Prediction = 0.210	
 elseif ping < 215 then	
-getgenv().Prediction = 0.192
+getgenv().Prediction = 0.198
 	elseif ping < 205 then
-getgenv().Prediction = 0.231	
+getgenv().Prediction = 0.182	
 	elseif ping < 190 then
-getgenv().Prediction = 0.1001	
+getgenv().Prediction = 0.100	
 elseif ping < 180 then	
-getgenv().Prediction = 0.123	
+getgenv().Prediction = 0.131	
 	elseif ping < 170 then
-getgenv().Prediction = 0.139	
+getgenv().Prediction = 0.145	
 	elseif ping < 160 then
-getgenv().Prediction = 0.189	
+getgenv().Prediction = 0.176	
 	elseif ping < 150 then
-getgenv().Prediction = 0.1120	
+getgenv().Prediction = 0.134	
 elseif ping < 140 then	
 getgenv().Prediction = 0.198	
 elseif ping < 130 then	
-getgenv().Prediction = 0.269	
-elseif ping < 120 then	
 getgenv().Prediction = 0.220	
+elseif ping < 120 then	
+getgenv().Prediction = 0.198	
 elseif ping < 110 then	
-getgenv().Prediction = 0.104	
+getgenv().Prediction = 0.145	
 elseif ping < 105 then	
-getgenv().Prediction = 0.122
+getgenv().Prediction = 0.144
 elseif ping < 90 then	
-getgenv().Prediction = 0.110	
+getgenv().Prediction = 0.134	
 elseif ping < 80 then	
 getgenv().Prediction = 0.191
 elseif ping < 70 then	
@@ -475,7 +475,7 @@ getgenv().Prediction = 0.152
 elseif ping < 30 then	
 getgenv().Prediction = 0.158
 elseif ping < 20 then	
-getgenv().Prediction = 0.162
+getgenv().Prediction = 0.161
         end	
         end	
 	end 
