@@ -91,13 +91,13 @@ local PredictionValue = 0.151359910
         placemarker.Anchored = true
         placemarker.CanCollide = false
         if Settings.rewrittenmain.DOT == true then
-        placemarker.Size = Vector3.new(6, 6, 6)
+        placemarker.Size = Vector3.new(9, 9, 9)
         else
         placemarker.Size = Vector3.new(0, 0, 0)
         end
         placemarker.Transparency = 1
         if Settings.rewrittenmain.DOT then
-        makemarker(placemarker, placemarker, Color3.fromRGB(18, 74, 44), 0.40, 0)
+        makemarker(placemarker, placemarker, Color3.fromRGB(68, 74, 44), 0.40, 0)
         end
     end)
  
@@ -165,7 +165,7 @@ local PredictionValue = 0.151359910
              split = string.split(pingvalue,'(')
              ping = tonumber(split[1])
             if ping < 130 then
-                PredictionValue = 0.176
+                PredictionValue = 0.167
             elseif ping < 125 then
                 PredictionValue = 0.156
             elseif ping < 110 then
@@ -435,43 +435,43 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.213	
+getgenv().Prediction = 0.203	
 elseif ping < 215 then	
-getgenv().Prediction = 0.221
+getgenv().Prediction = 0.211
 	elseif ping < 205 then
-getgenv().Prediction = 0.193	
+getgenv().Prediction = 0.197
 	elseif ping < 190 then
-getgenv().Prediction = 0.182	
+getgenv().Prediction = 0.177	
 elseif ping < 180 then	
-getgenv().Prediction = 0.193	
+getgenv().Prediction = 0.184	
 	elseif ping < 170 then
-getgenv().Prediction = 0.188	
+getgenv().Prediction = 0.165	
 	elseif ping < 160 then
-getgenv().Prediction = 0.165	
+getgenv().Prediction = 0.178	
 	elseif ping < 150 then
-getgenv().Prediction = 0.145	
+getgenv().Prediction = 0.153	
 elseif ping < 140 then	
-getgenv().Prediction = 0.134	
+getgenv().Prediction = 0.143	
 elseif ping < 130 then	
-getgenv().Prediction = 0.176	
+getgenv().Prediction = 0.188	
 elseif ping < 120 then	
-getgenv().Prediction = 0.165	
+getgenv().Prediction = 0.154	
 elseif ping < 110 then	
-getgenv().Prediction = 0.165	
+getgenv().Prediction = 0.151	
 elseif ping < 105 then	
-getgenv().Prediction = 0.155
+getgenv().Prediction = 0.146
 elseif ping < 90 then	
-getgenv().Prediction = 0.145	
+getgenv().Prediction = 0.165	
 elseif ping < 80 then	
-getgenv().Prediction = 0.1349
+getgenv().Prediction = 0.1383
 elseif ping < 70 then	
 getgenv().Prediction = 0.1456	
 elseif ping < 60 then	
-getgenv().Prediction = 0.1238
+getgenv().Prediction = 0.1398
 elseif ping < 50 then	
-getgenv().Prediction = 0.1399
+getgenv().Prediction = 0.1562
 elseif ping < 40 then	
-getgenv().Prediction = 0.1523	
+getgenv().Prediction = 0.1603	
 elseif ping < 30 then	
 getgenv().Prediction = 0.1589
 elseif ping < 20 then	
