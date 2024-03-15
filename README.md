@@ -1,15 +1,15 @@
-getgenv().RecurringPoint = "UpperTorso"
-getgenv().Hitbox = "UpperTorso"
+getgenv().RecurringPoint = "HumanoidRootPart"
+getgenv().Hitbox = "HumanoidRootPart"
 getgenv().Keybind = "c"
-getgenv().AimbotStrengthAmount = 0.475
-getgenv().PredictionAmount = 31
+getgenv().AimbotStrengthAmount = 0.3500
+getgenv().PredictionAmount = 23
 getgenv().Radius = 300
 getgenv().UsePrediction = true
 getgenv().AimbotStrength = true
 getgenv().FirstPerson = true
 getgenv().ThirdPerson = true
 getgenv().TeamCheck = false
-getgenv().Enabled = true
+getgenv().Enabled = t
 getgenv().smoothness = 1
 
  
